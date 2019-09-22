@@ -1,4 +1,4 @@
-# **![](http://i64.tinypic.com/qpqm45.png) AmiiBomb - Amiibo Cloning**
+# **![](../assets/icon.png?raw=true) AmiiBomb - Amiibo Cloning**
 
 AmiiBomb is Windows tools, with cheap component used, for create Amiibo Tag (NTAG215) and much more...
 
@@ -16,7 +16,7 @@ AmiiBomb is Windows tools, with cheap component used, for create Amiibo Tag (NTA
 
 You have to solder the pins on the RC522 Module and connect them following this schematics. Connect the Arduino Uno (or Nano) to the PC by USB and That's all! (Guys with soldering skills already know that but I prefer explain for anyone!)
 
-![Arduino / RC255 PinOut](http://i66.tinypic.com/2ng8zv9.jpg)
+![Arduino / RC255 PinOut](../assets/connectionschematic.png?raw=true)
 
 Signal    | RC522 Pin | Arduino Pin
 --------- | --------- | -----------
@@ -47,10 +47,10 @@ Just an Arduino program who communicate with AmiiBomb, You can flash it through 
 
 ## Overview
 
-![](http://i68.tinypic.com/dwe7g6.png) 
-![](http://i67.tinypic.com/4sjvd3.png) 
-![](http://i66.tinypic.com/21mtao8.jpg) 
-![](http://i66.tinypic.com/1z6z0o1.png) 
+![](../assets/picture1.png?raw=true) 
+![](../assets/picture2.png?raw=true) 
+![](../assets/picture3.png?raw=true) 
+![](../assets/picture4.png?raw=true) 
 
 ## What is done?
 - Grab info of an Amiibo Dump via http://Amiibo.life website.
