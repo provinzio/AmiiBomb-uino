@@ -1,4 +1,4 @@
-﻿using AngleSharp.Parser.Html;
+﻿using AngleSharp.Html.Parser;
 using Newtonsoft.Json;
 using System;
 using System.Data;
@@ -24,7 +24,7 @@ namespace AmiiBomb
 
         public static string[] Get_AmiiboLife(string Amiibo_NFC_ID)
         {
-            var HTML_Dom = new HtmlParser().Parse(Helper_Class.Get_Source_From_Url(AmiiboLife_BaseAdress + Amiibo_NFC_ID));
+            var HTML_Dom = new HtmlParser().ParseDocument(Helper_Class.Get_Source_From_Url(AmiiboLife_BaseAdress + Amiibo_NFC_ID));
 
             try
             {
