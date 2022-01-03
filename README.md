@@ -1,22 +1,27 @@
-# **![](http://i64.tinypic.com/qpqm45.png) AmiiBomb - Amiibo Cloning**
+# **![](../assets/icon.png?raw=true) AmiiBomb - Amiibo Cloning**
 
-AmiiBomb is Windows tools, with cheap component used, for create Amiibo Tag (NTAG215) and much more...
+AmiiBomb is Windows tools, with cheap component used, for create Amiibo Tag (NTAG215) and much more... 
+
+This is a Fork from https://github.com/AcK77/AmiiBomb-uino 
+
+I'm not a programmer. I can not help with bugs and problems.
+This Fork exists because i used the program myself.
 
 ## What's you need?
 
 - *1x* Windows PC
-- *1x* Arduino Uno R3 *(around $4)*
-- *1x* USB Cable Type AB *(pretty sure you already have it)*
-- *1x* RFID Module RC522 *(around $2)*
-- *7x* Pin Wire Male-Female *(around $1 for x20)*
-- *1x* Soldering Iron Kit *(and a little soldering skills)*
-- Many NTAG215 as you want Amiibo Tag *(around $34 for x100)*
+- *1x* Arduino Uno R3 
+- *1x* USB Cable Type AB 
+- *1x* RFID Module RC522 
+- *7x* Pin Wire Male-Female 
+- *1x* Soldering Iron Kit 
+- Many NTAG215 as you want Amiibo Tag
 
 ## What you have to do?
 
 You have to solder the pins on the RC522 Module and connect them following this schematics. Connect the Arduino Uno (or Nano) to the PC by USB and That's all! (Guys with soldering skills already know that but I prefer explain for anyone!)
 
-![Arduino / RC255 PinOut](http://i66.tinypic.com/2ng8zv9.jpg)
+![Arduino / RC255 PinOut](../assets/connectionschematic.png?raw=true)
 
 Signal    | RC522 Pin | Arduino Pin
 --------- | --------- | -----------
@@ -39,7 +44,7 @@ You can save the readed Amiibo here too, to write it back to another NTAG. You d
 
  - **Amiibo Keys**
 
-You probably already have them if you know a little how Amiibo cloning works. If not, a little helper is here in AmiiBomb. Due to Copyright reason, we can't distribute them, but there is many place to found them. AmiiBomb send you to the right website, you just have to highlight the keys chars and copy them to your Clipboard, AmiiBomb check if the valid keys was inside, and ask you if you want to save them. If you have already them, you just have to select the keys file.
+You probably already have them if you know a little how Amiibo cloning works. Due to Copyright reason, we can't distribute them, but there is many place to found them. AmiiBomb send you to the right website, you just have to highlight the keys chars and copy them to your Clipboard, AmiiBomb check if the valid keys was inside, and ask you if you want to save them. If you have already them, you just have to select the keys file.
 
  - **AmiiBombuino Firmware**
 
@@ -47,10 +52,10 @@ Just an Arduino program who communicate with AmiiBomb, You can flash it through 
 
 ## Overview
 
-![](http://i68.tinypic.com/dwe7g6.png) 
-![](http://i67.tinypic.com/4sjvd3.png) 
-![](http://i66.tinypic.com/21mtao8.jpg) 
-![](http://i66.tinypic.com/1z6z0o1.png) 
+![](../assets/picture1.png?raw=true) 
+![](../assets/picture2.png?raw=true) 
+![](../assets/picture3.png?raw=true) 
+![](../assets/picture4.png?raw=true) 
 
 ## What is done?
 - Grab info of an Amiibo Dump via http://Amiibo.life website.
@@ -68,14 +73,12 @@ Just an Arduino program who communicate with AmiiBomb, You can flash it through 
 - Get Amiibo Tag Basic Informations.
 - and more...
 
-## What's Next?
+## What was planned by AcK77?
 - Many little things to do AmiiBomb more User Friendly.
 - Clean the code.
 - It's work really fine with an NTAG215 but I don't know if it's work with an Amiibo ^^'!
 - AppData editor (for SSB Amiibo or any others who have interesting things inside).
 - Support PN532 NFC Module in AmiiBombuino.
 - Improve the docs.
-
-In a future, I would own an N2 and a PowerSaves to add many functionality as possible in AmiiBomb. If you have any kind of ideas or suggestions, just let me know :)! You feel free to donate me at paypal adress: ackeedy@gmail.com
 
 Thanks & Enjoy!

@@ -1,9 +1,10 @@
-﻿using AngleSharp.Parser.Html;
+﻿using AngleSharp.Html.Parser;
 using Newtonsoft.Json;
 using System;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace AmiiBomb
 {
@@ -24,7 +25,7 @@ namespace AmiiBomb
 
         public static string[] Get_AmiiboLife(string Amiibo_NFC_ID)
         {
-            var HTML_Dom = new HtmlParser().Parse(Helper_Class.Get_Source_From_Url(AmiiboLife_BaseAdress + Amiibo_NFC_ID));
+            var HTML_Dom = new HtmlParser().ParseDocument(Helper_Class.Get_Source_From_Url(AmiiboLife_BaseAdress + Amiibo_NFC_ID));
 
             try
             {
@@ -41,12 +42,12 @@ namespace AmiiBomb
             }
         }
 
-        public static string AmiiboAPI_BaseAdress = "http://amiiboapi.herokuapp.com/api/amiibo/";
+        public static string AmiiboAPI_BaseAdress = "http://amiiboapi.herokuapp.com/api/amiibo/?id=";
 
         public static string[] Get_AmiiboAPI(string Amiibo_NFC_ID)
         {
             var JSON = Helper_Class.Get_Source_From_Url(AmiiboAPI_BaseAdress + Amiibo_NFC_ID.Replace("-", string.Empty));
-            DataRow Amiibo = JsonConvert.DeserializeObject<DataSet>(JSON).Tables["amiibo"].Rows[0];
+            var Amiibo = JObject.Parse(JSON)["amiibo"];
 
             try
             {
