@@ -38,13 +38,13 @@ namespace AmiiBomb
             if (!File.Exists(@"lib\ArduinoHex\AmiiBombuino.Uno.hex")) throw new Exception("\"lib\\ArduinoHex\\AmiiBombuino.Uno.hex\" file is missing!");
 
             if (!File.Exists(@"lib\AmiiBomb.conf")) throw new Exception("\"lib\\AmiiBomb.conf\" file is missing!");
-            if (!File.Exists(@"lib\AngleSharp.dll")) throw new Exception("\"lib\\AngleSharp.dll\" file is missing!");
             if (!File.Exists(@"lib\Arduino-RC522.png")) throw new Exception("\"lib\\Arduino-RC522.png\" file is missing!");
-            if (!File.Exists(@"lib\BouncyCastle.Crypto.dll")) throw new Exception("\"lib\\BouncyCastle.Crypto.dll\" file is missing!");
-            if (!File.Exists(@"lib\IntelHexFormatReader.dll")) throw new Exception("\"lib\\IntelHexFormatReader.dll\" file is missing!");
-            if (!File.Exists(@"lib\Newtonsoft.Json.dll")) throw new Exception("\"lib\\Newtonsoft.Json.dll\" file is missing!");
-            if (!File.Exists(@"lib\NLog.dll")) throw new Exception("\"lib\\NLog.dll\" file missing!");
-            if (!File.Exists(@"lib\RJCP.SerialPortStream.dll")) throw new Exception("\"lib\\RJCP.SerialPortStream.dll\" file is missing!");
+            if (!File.Exists(@"AngleSharp.dll")) throw new Exception("\"AngleSharp.dll\" file is missing!");
+            if (!File.Exists(@"BouncyCastle.Crypto.dll")) throw new Exception("\"BouncyCastle.Crypto.dll\" file is missing!");
+            if (!File.Exists(@"IntelHexFormatReader.dll")) throw new Exception("\"IntelHexFormatReader.dll\" file is missing!");
+            if (!File.Exists(@"Newtonsoft.Json.dll")) throw new Exception("\"Newtonsoft.Json.dll\" file is missing!");
+            if (!File.Exists(@"NLog.dll")) throw new Exception("\"NLog.dll\" file missing!");
+            if (!File.Exists(@"RJCP.SerialPortStream.dll")) throw new Exception("\"RJCP.SerialPortStream.dll\" file is missing!");
         }
     }
 }
